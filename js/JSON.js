@@ -13,5 +13,5 @@ const ataques = [  {id:1, personaje: "Narciso", nombre:"Guadañazo", daño: 20, 
                    ];
 const guardarLocal = (clave, valor) => {localStorage.setItem(clave, valor)};
 for (const ataque of ataques) {
-    guardarLocal(ataque.id, JSON.stringfy(ataques));
+    guardarLocal(ataque.id, JSON.stringify(ataques));
 }
